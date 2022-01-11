@@ -1,23 +1,13 @@
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
 
-  const title = "welcome to the new blog"
-  const like = 50
-  const link = "http://google.com"
-  //const person = {name: "yoshi", age:30}
-
   return (
     <div className='App'>
+      <Navbar/>
       <div className="content">
-        <h1>{title}</h1>
-        <p>
-          liked {like} times
-        </p>
-        <p>{10}</p>
-        <p>{"hello"}</p>
-        <p>{[1,2,3,4,5,6]}</p>
-        <a href={link}>google site</a>
+       <h1> Hello bitches</h1>
       </div>
     </div>
   );
