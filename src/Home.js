@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import BlogList from "./BlogList";
 
-
 const Home = () => {
   const [blogs, setBlogs] = useState([
     {
@@ -18,10 +17,16 @@ const Home = () => {
       id: 2,
     },
     {
+      title: "my man can do anyhting",
+      body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic assumenda omnis fugit sint ullam iusto consectetur officia similique, maxime quis!",
+      author: "jack",
+      id: 3,
+    },
+    {
       title: "Why my love life is amazing",
       body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic assumenda omnis fugit sint ullam iusto consectetur officia similique, maxime quis!",
       author: "benny",
-      id: 3,
+      id: 4,
     },
   ]);
   // const [updateName, setUpdateName] = useState("mario")
@@ -39,7 +44,11 @@ const Home = () => {
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs!"/>
+      <BlogList blogs={blogs} title="All Blogs!" />
+      <BlogList
+        blogs={blogs.filter((blog) => blog.author === "jack")}
+        title="Jack Blogs"
+      />
       {/* <p>{updateName} is {updateAge} years old</p>
       <button onClick={handleClick}>Click Me</button> */}
       {/* <button onClick={(e)=>handleClickAgain(" mario", e)}>Click on me again</button> */}

@@ -1,19 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const blogList = ({blogs, title}) => {
-
-  console.log(blogs)
+const blogList = ({ blogs, title }) => {
+  console.log(blogs);
   return (
     <div className="blog-list">
       <h1>{title}</h1>
-      {blogs.map((blog)=> (
+      {blogs.map((blog) => (
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by: {blog.author}</p>
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default blogList
+export default blogList;
