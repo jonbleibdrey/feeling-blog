@@ -29,6 +29,11 @@ const Home = () => {
       id: 4,
     },
   ]);
+
+  const handleDelete = (id) =>{
+    setBlogs(blogs.filter(blog => blog.id !== id ))
+  }
+
   // const [updateName, setUpdateName] = useState("mario")
   // const [updateAge, setAge] = useState(25)
 
@@ -44,11 +49,12 @@ const Home = () => {
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs!" />
-      <BlogList
+      <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>
+      <hr/>
+      {/* <BlogList
         blogs={blogs.filter((blog) => blog.author === "jack")}
         title="Jack Blogs"
-      />
+      /> */}
       {/* <p>{updateName} is {updateAge} years old</p>
       <button onClick={handleClick}>Click Me</button> */}
       {/* <button onClick={(e)=>handleClickAgain(" mario", e)}>Click on me again</button> */}
