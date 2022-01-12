@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
@@ -30,9 +30,17 @@ const Home = () => {
     },
   ]);
 
+  const [name, setName] = useState("mario")
+
   const handleDelete = (id) =>{
     setBlogs(blogs.filter(blog => blog.id !== id ))
   }
+
+  useEffect(()=>{
+    // runs in every rerender, even deletes
+    console.log("useEffect ran")
+    console.log(name)
+  },[name]);
 
   // const [updateName, setUpdateName] = useState("mario")
   // const [updateAge, setAge] = useState(25)
@@ -51,6 +59,8 @@ const Home = () => {
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>
       <hr/>
+      <button onClick={()=>setName("luigi")}>change name</button>
+      <p>{name}</p>
       {/* <BlogList
         blogs={blogs.filter((blog) => blog.author === "jack")}
         title="Jack Blogs"
