@@ -4,8 +4,9 @@ import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
+  const [isPending, setIsPending] = useState(true)
 
-  const [name, setName] = useState("mario")
+  // const [name, setName] = useState("mario")
 
   // const handleDelete = (id) =>{
   //   setBlogs(blogs.filter(blog => blog.id !== id ))
@@ -20,6 +21,7 @@ const Home = () => {
     .then((data) => {
       console.log("data", data)
       setBlogs(data)
+      setIsPending(false)
     })
     console.log("useEffect ran")
     
@@ -41,6 +43,7 @@ const Home = () => {
   return (
     <div className="home">
       {/* {blogs && <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>} */}
+      {isPending && <div> Loading... </div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs!"/>}
       <hr/>
       {/* <button onClick={()=>setName("luigi")}>change name</button>
