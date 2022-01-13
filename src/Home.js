@@ -7,9 +7,9 @@ const Home = () => {
 
   const [name, setName] = useState("mario")
 
-  const handleDelete = (id) =>{
-    setBlogs(blogs.filter(blog => blog.id !== id ))
-  }
+  // const handleDelete = (id) =>{
+  //   setBlogs(blogs.filter(blog => blog.id !== id ))
+  // }
 
   useEffect(()=>{
     // runs in every rerender, even deletes
@@ -40,10 +40,11 @@ const Home = () => {
 
   return (
     <div className="home">
-      {blogs && <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>}
+      {/* {blogs && <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>} */}
+      {blogs && <BlogList blogs={blogs} title="All Blogs!"/>}
       <hr/>
-      <button onClick={()=>setName("luigi")}>change name</button>
-      <p>{name}</p>
+      {/* <button onClick={()=>setName("luigi")}>change name</button>
+      <p>{name}</p> */}
       {/* <BlogList
         blogs={blogs.filter((blog) => blog.author === "jack")}
         title="Jack Blogs"
