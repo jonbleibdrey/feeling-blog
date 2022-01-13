@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
@@ -60,7 +59,6 @@ const Home = () => {
       {error && <div> {error} </div>}
       {isPending && <div> Loading... </div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
-      <hr />
       {/* <button onClick={()=>setName("luigi")}>change name</button>
       <p>{name}</p> */}
       {/* <BlogList
