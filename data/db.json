@@ -7,12 +7,6 @@
       "id": 1
     },
     {
-      "title": "Opening party!",
-      "body": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id explicabo suscipit earum consequatur illo eum doloribus quae porro voluptates nostrum. Est suscipit iure dolorum aliquam, sint consequatur nam quis repudiandae?",
-      "author": "ben",
-      "id": 2
-    },
-    {
       "title": "Its a boy!",
       "body": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id explicabo suscipit earum consequatur illo eum doloribus quae porro voluptates nostrum. Est suscipit iure dolorum aliquam, sint consequatur nam quis repudiandae?",
       "author": "henry",
@@ -47,6 +41,12 @@
       "body": "dfgdafgdsfg",
       "author": "jack",
       "id": 8
+    },
+    {
+      "title": "sdfsdf",
+      "body": "asdfsdf",
+      "author": "jack",
+      "id": 9
     }
   ]
 }
