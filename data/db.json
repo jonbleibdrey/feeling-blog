@@ -1,28 +1,52 @@
 {
-  "blogs":[
-    {"title": "My first blog",
+  "blogs": [
+    {
+      "title": "My first blog",
       "body": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id explicabo suscipit earum consequatur illo eum doloribus quae porro voluptates nostrum. Est suscipit iure dolorum aliquam, sint consequatur nam quis repudiandae?",
       "author": "jack",
       "id": 1
     },
-    {"title": "Opening party!",
+    {
+      "title": "Opening party!",
       "body": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id explicabo suscipit earum consequatur illo eum doloribus quae porro voluptates nostrum. Est suscipit iure dolorum aliquam, sint consequatur nam quis repudiandae?",
       "author": "ben",
       "id": 2
-    }
-    ,
-    {"title": "Its a boy!",
+    },
+    {
+      "title": "Its a boy!",
       "body": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id explicabo suscipit earum consequatur illo eum doloribus quae porro voluptates nostrum. Est suscipit iure dolorum aliquam, sint consequatur nam quis repudiandae?",
       "author": "henry",
       "id": 3
-    }
-    ,
-    {"title": "lasagna again",
+    },
+    {
+      "title": "lasagna again",
       "body": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id explicabo suscipit earum consequatur illo eum doloribus quae porro voluptates nostrum. Est suscipit iure dolorum aliquam, sint consequatur nam quis repudiandae?",
       "author": "joe",
       "id": 4
+    },
+    {
+      "title": "dfgadfg",
+      "body": "dfgadfg",
+      "author": "henry",
+      "id": 5
+    },
+    {
+      "title": "hello big boy",
+      "body": "This was amzing to learn thank you everyone I am thankful for the body mind and spirit\n",
+      "author": "jack",
+      "id": 6
+    },
+    {
+      "title": "drgdgdfg",
+      "body": "dfgdfgdsfgdsf",
+      "author": "henry",
+      "id": 7
+    },
+    {
+      "title": "drgdfg",
+      "body": "dfgdafgdsfg",
+      "author": "jack",
+      "id": 8
     }
-    
   ]
 }
-
