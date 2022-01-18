@@ -5,10 +5,17 @@ const Create = () => {
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("jack");
 
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    const blog = {title, body, author}
+
+    console.log("blog", blog)
+    }
+
   return (
     <div className="create">
       <h2>Add new blog</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label> Blog title:</label>
         <input
           type="text"
@@ -35,7 +42,7 @@ const Create = () => {
         <button>Add blog</button>
       </form>
       <h3>{title}</h3>
-      <p>{body}</p>
+      <p>Print: {body}</p>
       <p>By: {author}</p>
     </div>
   );
