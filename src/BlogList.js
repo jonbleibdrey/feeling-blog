@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-const blogList = ({ blogs, title}) => {
+const blogList = ({ blogs, title }) => {
   console.log(blogs);
 
   return (
@@ -8,12 +9,11 @@ const blogList = ({ blogs, title}) => {
       <h1>{title}</h1>
       {blogs.map((blog) => (
         <div className="blog-preview" key={blog.id}>
-          <h2>{blog.title}</h2>
-          <h4>Written by: {blog.author}</h4>
-          <hr/>
-          <p>{blog.body}</p>
+          <Link to={`/blogs/${blog.id}`}>
+            <h2>{blog.title}</h2>
+            <h4>Written by: {blog.author}</h4>
+          </Link>
         </div>
-       
       ))}
     </div>
   );
